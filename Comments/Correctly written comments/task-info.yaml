@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: true
+options:
+- text: <pre><code class="language-no-highlight">/* a strange */ // /* single-line
+    comment */</code></pre>
+- text: <pre><code class="language-no-highlight">// this is<br>a multiple line<br>//
+    comment </code></pre>
+- text: <pre><code class="language-no-highlight">/*<br>    another comment<br>*/*/</code></pre>
+- text: <pre><code class="language-no-highlight">/**<br>    documentation comment?<br>**/</code></pre>
+- text: <pre><code class="language-no-highlight">/*/*<br>    YAC = Yet Another Comment<br>*/</code></pre>
+message_correct: Congratulations!
+message_incorrect: Incorrect solution
+files:
+- name: src/Main.kt
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    fun main(args: Array<String>) {
+      // put your code here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/4418#comment
+status: Solved
+record: -1
